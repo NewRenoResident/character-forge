@@ -1,10 +1,6 @@
 import { ReactNode } from "react";
 
-interface IPublicLayout {
-  children: ReactNode;
-}
-
-export default function PublicLayout({ children }: IPublicLayout) {
+export default function ForgeLayout({ children }: { children: ReactNode }) {
   return (
     <main className="w-full h-screen flex justify-center items-center">
       {children}
